@@ -1,0 +1,104 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #333333, #4D4D4D); /* Dark grey gradient */
+  color: #F5F5F5; /* Light grey text for better contrast */
+  margin: 0;
+  padding: 50px;  /* Padding to avoid overlap with the logo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.Logo {
+  width: 200px; 
+  position: fixed; /* Keep at top-left */
+  top: 10px;
+  left: 10px; 
+  z-index: 10; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.Logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Title h1 {
+  color: #ff0000; /* Red color for the title */
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  margin: 0;
+}
+
+.Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent for dark theme */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Input {
+  width: 320px;
+  padding: 15px;
+  margin: 12px;
+  border: 2px solid #FF2E2E; /* Red border for input */
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: rgba(54, 51, 51, 0.1); 
+  color: #F5F5F5; /* Light grey text */
+  transition: all 0.3s ease-in-out;
+}
+
+.Input:focus {
+  outline: none;
+  border-color: #FF6161; /* Lighter red on focus */
+  box-shadow: 0 0 8px #FF6161;
+}
+
+.Input:hover {
+  border-color: #FF6161;
+  box-shadow: 0 0 8px #FF6161;
+}
+
+.Btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #FF2E2E, #B22222); /* Red gradient */
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Btn:hover {
+  background: linear-gradient(135deg, #B22222, #FF2E2E); /* Reversed red gradient on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+#Text.grade-Text {
+  font-size: 25px;
+  font-weight: 500;
+  color: #FF2E2E; /* Red color for the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+}
